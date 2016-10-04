@@ -10,6 +10,7 @@ twoside,
 
 \usepackage{bookpemd}
 \usepackage{multirow}
+\usepackage{frcursive}
 
 %\usepackage{indentfirst}
 %\usepackage{showkeys}
@@ -21,14 +22,15 @@ twoside,
 chapters/preliminares/preliminares,%
 }
 
+\usepackage{tcolorbox}
 
 % \newcommand{\R}{{\bf R}}
 % \newcommand{\N}{{\bf N}}
-% \newcommand{\Q}{{\bf Q}}
-\renewcommand{\Im}{{\bf Im}}
+\newcommand{\Q}{\textbf{Q}}
+\newcommand{\D}{\textbf{Dom}}
+\renewcommand{\Im}{\textbf{Im}}
 %\renewcommand{\cd}{ç}
 \newcommand{\ag}[1]{#1$\acute{}$}
-\newcommand{\D}{{\bf Dom}}
 %\newcommand{\act}[2]{$\begin{array}[c]#1 \\ #2 \end{array}$}
 
 % \newtheorem{teo}{Teorema}[section]
@@ -50,8 +52,8 @@ chapters/preliminares/preliminares,%
 
 %\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
 
-% \newtcolorbox{mybox}{colback=orange!20!white,colframe=orange!75!black}
-% \newtcolorbox{myboxblue}{colback=green!20!white, colframe=green!20!white}
+\newtcolorbox{mybox}{colback=orange!20!white,colframe=orange!75!black}
+\newtcolorbox{myboxblue}{colback=green!20!white, colframe=green!20!white}
 
 
 %\overfullrule=5pt  % if a draft
