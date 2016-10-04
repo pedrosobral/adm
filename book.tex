@@ -1,0 +1,76 @@
+\documentclass[a4paper,brazil,%
+11pt,
+%oldfontcommands,%
+%showtrims,%
+openright,
+twoside,
+%oneside
+%draft
+]{memoir}
+
+\usepackage{bookpemd}
+\usepackage{multirow}
+
+%\usepackage{indentfirst}
+%\usepackage{showkeys}
+
+%\usepackage{makeidx}
+%\makeindex
+
+\includeonly{%
+chapters/preliminares/preliminares,%
+}
+
+
+% \newcommand{\R}{{\bf R}}
+% \newcommand{\N}{{\bf N}}
+% \newcommand{\Q}{{\bf Q}}
+\renewcommand{\Im}{{\bf Im}}
+%\renewcommand{\cd}{ç}
+\newcommand{\ag}[1]{#1$\acute{}$}
+\newcommand{\D}{{\bf Dom}}
+%\newcommand{\act}[2]{$\begin{array}[c]#1 \\ #2 \end{array}$}
+
+% \newtheorem{teo}{Teorema}[section]
+% \newtheorem{prop}{Proposição}[section]
+% \newtheorem{lema}{Lema}[section]
+% \newtheorem{cor}{Corolário}[section]
+
+
+
+\theoremstyle{definition}
+
+\newtheorem{ex}{Exemplo}[section]
+%\newtheorem{def}{Definição}[section]
+
+
+\newenvironment{dem}[1][Demonstração:]{\begin{trivlist}%--------defição do ambiente dem
+\item[\hskip \labelsep {\bfseries #1}]}{$\square$\end{trivlist}}
+%\newenvironment{ex}[1][Exemplo:]{\begin{trivlist}%--------defição do ambiente ex
+
+%\item[\hskip \labelsep {\bfseries #1}]}{\end{trivlist}}
+
+% \newtcolorbox{mybox}{colback=orange!20!white,colframe=orange!75!black}
+% \newtcolorbox{myboxblue}{colback=green!20!white, colframe=green!20!white}
+
+
+%\overfullrule=5pt  % if a draft
+\begin{document}
+\frontmatter                            % only in book class (roman page #s)
+{\contracapa{Notas de Aula de}{Matemática para Administração}
+	{Volume I}
+	{Alison Marcelo Van Der Laan Melo}}
+
+% {\copyr}
+
+{\fichacat}
+\tableofcontents*
+%\addcontentsline{toc}{chapter}{Sumário}
+\mainmatter                             % only in book class (arabic page #s)
+\frenchspacing % remover espaço extra
+
+\include{chapters/preliminares/preliminares}
+%%%%%%% INDEX
+\pagestyle{empty}\printindex\thispagestyle{empty}%
+%
+\end{document}
