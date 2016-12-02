@@ -1,0 +1,90 @@
+\chapter{Limites}
+\thispagestyle{empty}
+
+\section{Introdução}
+Seja $f\left(x\right)$ uma função com variável real. Em alguns contextos
+é importante compreender o comportamento da função $f$ quando a variável
+$x$ se aproxima de um determinado valor $a$ (diremos ``$x$ tende
+a $a$''). Quando, a medida que $x$ tende a $a$, o valor de $f\left(x\right)$
+está se aproximando de um número $L$, diremos que ``$L$ é o limite
+de $f\left(x\right)$ quando $x$ tende a $a$'' e denotaremos
+
+\[
+\limitex{a}{f(x)}=L.
+\]
+
+
+Um exemplo típico de cálculo de limite é a função $f\left(x\right)=\frac{x^{2}-1}{x-1}$.
+Note que neste caso o denominador $x-1$ se anula quando $x=1$, portanto
+$f\left(x\right)$ não está definida para $x=1$.
+
+Neste caso a informação de que a medida que $x$ se aproxima de $1$,
+$f\left(x\right)$ se aproxima de $2$ é de grande importância, como
+veremos nos próximos capítulos.
+
+
+\subsection{Definição matemática de limite}
+
+Aqui, queremos tornar preciso o conceito de aproximação implícito
+na sentença
+
+\begin{center}
+\emph{Quando $x$ tende a $a$ $f\left(x\right)$ tende a $L$, }
+\par\end{center}
+
+\begin{flushleft}
+que aparece quando falamos de limite.
+\par\end{flushleft}
+
+Dizer que $x$ se aproxima de $a$ significa que a distancia entre
+$x$ e $a$ fica pequena. Isto é,
+\[
+\left|f\left(x\right)-L\right|
+\]
+ fica cada vez menor.
+
+Tendo estes conceitos em mente, a definição precisa de limite é
+
+\begin{defn}
+Diremos que $L$ é o limite de $f\left(x\right)$ quando $x$ tende
+a $a$ se dado $\epsilon>0$ existe $\delta>0$ tal que
+\[
+\left|x-a\right|<\delta
+\]
+implica que $\left|f\left(x\right)-L\right|<\epsilon$. Escreveremos
+\[
+L=\limitex{a}{f(x)}
+\]
+\end{defn}
+
+
+
+\begin{exemplo}
+Verifique que $$\limitex{1}{3x-1}=2.$$
+
+Devemos usar a definição anterior. Ou seja, dado um $\epsilon>0$
+qualquer, devemos ser capazes de encontrar um outro número $\epsilon>0$
+tal que
+\begin{equation}
+\left|x-1\right|<\epsilon\mbox{ implica que}\left|\left(3x-1\right)-2\right|<\epsilon\tag{1}
+\end{equation}
+
+
+Note que
+\[
+\left|3x-1-2\right|=\left|3x-3\right|=3\left|x-1\right|.
+\]
+
+
+Portanto,
+\[
+\left|x-1\right|<\frac{\epsilon}{3}\Rightarrow3\left|x-1\right|<\epsilon\Rightarrow\left|\left(3x-1\right)-2\right|<\epsilon.
+\]
+
+
+Ou seja, podemos tomar $\delta=\frac{\epsilon}{3}$ na sentença (1).
+Fica assim demonstrado que
+\[
+\limitex{1}{\left(3x-1\right)}=2.
+\]
+\end{exemplo}

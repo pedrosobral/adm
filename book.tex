@@ -20,6 +20,7 @@ twoside,
 
 \includeonly{%
 chapters/preliminares/preliminares,%
+chapters/limites/limites,%
 }
 
 \usepackage{tcolorbox}
@@ -37,14 +38,6 @@ chapters/preliminares/preliminares,%
 % \newtheorem{prop}{Proposição}[section]
 % \newtheorem{lema}{Lema}[section]
 % \newtheorem{cor}{Corolário}[section]
-
-
-
-\theoremstyle{definition}
-
-\newtheorem{ex}{Exemplo}[section]
-%\newtheorem{def}{Definição}[section]
-
 
 \newenvironment{dem}[1][Demonstração:]{\begin{trivlist}%--------defição do ambiente dem
 \item[\hskip \labelsep {\bfseries #1}]}{$\square$\end{trivlist}}
@@ -73,6 +66,7 @@ chapters/preliminares/preliminares,%
 \frenchspacing % remover espaço extra
 
 \include{chapters/preliminares/preliminares}
+\include{chapters/limites/limites}
 %%%%%%% INDEX
 \pagestyle{empty}\printindex\thispagestyle{empty}%
 %
