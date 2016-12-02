@@ -497,6 +497,109 @@ O mesmo vale para todas raízes de ordem par: $\sqrt[2]{\cdot }$, $\sqrt[4]{\cdo
 está definida apenas para valores não negativos de $x$ ($x\geq 0$).
 \end{exemplo}
 
+\noindent\textbf{Função exponencial:}
+A função $f\left(x\right)$ é exponêncial de base $a$ se é da forma
+\[
+f\left(x\right)=a^{x}
+\]
+onde $x$ é a variável.
+
+Em alguns casos é possível calcular diretamente o valor da exponencial.
+
+Quando $x$ é um número natural:
+\[
+a^{0}=1,\,a^{1}=a,\,a^{2}=a\ldotp a,\,a^{3}=a\ldotp a\ldotp a,\ldots
+\]
+
+
+Quando $x$ é um número inteiro negativo:
+
+\[
+a^{-1}=\frac{1}{a},\,a^{-2}=\frac{1}{a^{2}},\,a^{-3}=\frac{1}{a^{3}},\,\ldots
+\]
+
+
+Quando $x$ é uma fração:
+\[
+a^{\frac{1}{2}}=\sqrt[2]{a},\,a^{\frac{3}{5}}=\sqrt[5]{a^{3}},\,a^{-\frac{7}{3}}=\frac{1}{\sqrt[3]{a^{7}}},\,\ldots
+\]
+
+
+\paragraph{Propriedades da exponencial}
+\begin{enumerate}[i)]
+\item $a^{x+y}=a^{x}\ldotp a^{y}$
+\item $a^{x\ldotp y}=\left(a^{x}\right)^{y}$
+\end{enumerate}
+
+\fbox{\begin{minipage}[t]{1\columnwidth}%
+Neste curso trabalharemos preferencialmente com funções exponenciais
+que tem como base o número de Euler. O número de Euler é representado
+pela letra $e$ e tem valor aproximado
+\[
+e\approx2,718\ldots
+\]
+\end{minipage}}
+
+\begin{exemplo}
+Verifique as propriedades da exponencial quando $x=2$, $y=3$ e $a=5$.
+\begin{enumerate}[i)]
+\item $5^{2+3}=5^{5}=5\ldotp5\ldotp5\ldotp5\ldotp5\ldotp5=5^{2}\ldotp5^{3}$
+\item $\left(5^{2}\right)^{3}=\left(5^{2}\right)\ldotp\left(5^{2}\right)\ldotp\left(5^{2}\right)=\left(5\ldotp5\right)\ldotp\left(5\ldotp5\right)\ldotp\left(5\ldotp5\right)=5^{6}=5^{2\ldotp3}$
+\end{enumerate}
+\end{exemplo}
+
+\paragraph{Função logarítmica:}
+O logaritmo de base $a$ é a função inversa da função exponencial
+de base $a$. Tradicionalmente representamos a função exponêncial
+de base $a$ por $\log_{a}x$ onde $x$ é a variável.
+
+Dado um número $x>0$, $\log_{a}x$ é um número $y$ tal que $a^{y}=x$.
+
+Teremos preferência por fazer calculos com o chamado logarítmo natural,
+isto é, o logaritmo de base $e$. Para o logaritmo natural usaremos
+a notação $\ln x$.
+
+
+Propriedades do logaritmo
+\begin{enumerate}[i)]
+\item $\log\left(a^{x}\right)=x$
+\item $\log\left(x^{c}\right)=c\ldotp\log_{a}x$
+\item $\log_{a}\left(c\ldotp x\right)=\log_{a}c+\log_{a}x$
+\end{enumerate}
+
+\begin{proof}$ $\newline
+\begin{enumerate}[i)]
+\item Este item segue do fato de que o logaritmo de base $a$ é a inversa
+da exponencial de base $a$.
+\item Denotaremos $y=\log_{a}x$. Então $a^{y}=x$, logo nos dois lados
+desta última igualdade obtemos \[\log x^{c}=\log_{a}\left(a^{c\cdotp y}\right)=c\ldotp y=c\log_{a}\left(x\right).\]
+\item $a^{\left(\log_{a}c+\log_{a}x\right)}=a^{\log_{a}c}\ldotp a^{\log_{a}x}=c\ldotp x$.
+Logo, tomando $\log_{a}$ no primeiro e último membro:
+\[
+\log_{a}c+\log_{a}x=\log_{a}\left(cx\right).
+\]
+\end{enumerate}
+\end{proof}
+
+\paragraph{Mudança de base do logaritmo}
+\[
+\log_{a}x=\left(\log_{a}b\right)\left(\log_{b}x\right)
+\]
+
+\begin{proof}
+Novamente vamos denotar $y=\log_{b}x$ por $b^{y}=x$. Por outro lado,
+$b=a^{\log_{a}b}$, portanto
+\[
+x=b^{y}=\left[a^{\log_{a}b}\right]^{y}=a^{\left(\log_{a}b\right)\ldotp y}
+\]
+
+
+Tomando $\log_{a}$ nas igualdades, concluímos
+\[
+\log_{a}x=\log_{a}b\ldotp y=\left(\log_{a}b\right)\ldotp\left(\log_{b}x\right)
+\]
+\end{proof}
+
 
 \section{Proporções e Porcentagens.}
 
